@@ -5,7 +5,7 @@ body {
     padding: 0;
 }
 
-:root{
+:root {
     --bg-primary: rgb(8 28 51);
 }
 
@@ -23,7 +23,12 @@ header {
     align-items: flex-start;
     padding: 20px;
     height: 80vh;
-    
+
+}
+
+img {
+    width: 100px;
+    height: 100px;
 }
 
 /* Secciones izquierda y derecha */
@@ -62,7 +67,7 @@ header {
     margin: auto
 }
 
-.container-elemets{
+.container-elemets {
     height: 300px;
     background-color: #fff;
     display: grid;
@@ -87,7 +92,7 @@ header {
     opacity: 0;
 }
 
-.btnCombinar{
+.btnCombinar {
     background-color: var(--bg-primary);
     color: #fff;
     padding: 10px;
@@ -96,5 +101,53 @@ header {
     cursor: pointer;
 }
 
+.swal2-popup {
+    font-size: 16px; /* Ajusta el tamaño de fuente base para dispositivos móviles */
+}
+
+.swal2-image {
+    width: 400px;
+    height: 300px;
+}
 
 
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .left-section {
+        width: 100%;
+        max-width: none;
+        max-height: 11%;
+    }
+
+    .right-section {
+        width: 100%;
+        max-width: none;
+    }
+
+    .right-section .element,
+    .left-section .element {
+        width: 50px;
+        height: 50px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swal2-popup {
+        max-width: 60%;
+        font-size: 12px;
+    }
+
+    .swal2-image {
+        width: 100px;
+        height: 100px;
+    }
+}

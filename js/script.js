@@ -47,8 +47,6 @@ function obtenerOrden() {
         Swal.fire({
             title: combinacionInfo.nombre,
             imageUrl: combinacionInfo.imagen,
-            imageWidth: 400,
-            imageHeight: 300,
         });
     } else {
         // No se encontraron coincidencias
