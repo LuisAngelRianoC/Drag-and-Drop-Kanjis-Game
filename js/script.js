@@ -26,9 +26,9 @@ function obtenerOrden() {
 
     // Define un objeto que asocie las combinaciones con nombres e imágenes
     const combinacionesInfo = {
-        '1,2': { nombre: 'Kazan', imagen: '/img/kazan.jpg' },
-        '3,1': { nombre: 'Hanabi', imagen: '/img/hanabi.jpg' },
-        '1,2,4': { nombre: 'Kazanbai', imagen: '/img/kazanbai.jpg' },
+        '1,2': { nombre: 'Kazan', imagen: 'img/kazan.jpg' },
+        '3,1': { nombre: 'Hanabi', imagen: 'img/hanabi.jpg' },
+        '1,2,4': { nombre: 'Kazanbai', imagen: 'img/kazanbai.jpg' },
     };
 
     let coincidenciaEncontrada = false; // Inicialmente no se ha encontrado ninguna coincidencia
