@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprende Kanjis Jugando</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/imagesStyle.css">
+</head>
+
+<body>
+    <header>
+        <h1>Aprende Kanjis Facil</h1>
+    </header>
+    <div class="container">
+
+        <div class="left-section" id="left-section">
+            <!-- Elementos para arrastrar -->
+            <div class="element" data-valor="1"><img src="img/ka.jpg"></div>
+            <div class="element" data-valor="2"><img src="img/yama.png"></div>
+            <div class="element" data-valor="3"><img src="img/hana.jpg"></div>
+            <div class="element" data-valor="4"><img src="img/hai.jpg"></div>
+        </div>
+
+        <div class="right-section" id="right-section">
+            <div class="container-elemets" id="container-elemets">
+                
+            </div>
+            <div id="resultado"></div>
+            <button id="btnCombinar" class="btnCombinar">Combinar</button>
+
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/script.js"></script>
+    <!-- <script src="js/sweetAlert.js"></script> -->
+
+</body>
+
+</html>

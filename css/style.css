@@ -1,0 +1,100 @@
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bg-primary: rgb(8 28 51);
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    background-color: var(--bg-primary);
+    color: white;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    height: 80vh;
+    
+}
+
+/* Secciones izquierda y derecha */
+.left-section {
+    width: 30%;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    gap: 10px;
+    overflow: scroll;
+    max-height: 95%;
+}
+
+.right-section {
+    width: 62%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Elementos arrastrables */
+.right-section .element,
+.left-section .element {
+    padding: 5px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    cursor: grab;
+    width: 100px;
+    height: 100px;
+    margin: auto
+}
+
+.container-elemets{
+    height: 300px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    gap: 10px;
+}
+
+.left-section .element.seleccionado,
+.right-section .element.seleccionado {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.left-section .element.fantasma,
+.right-section .element.fantasma {
+    border: 2px dotted #333;
+}
+
+.left-section .element.drag,
+.right-section .element.drag {
+    opacity: 0;
+}
+
+.btnCombinar{
+    background-color: var(--bg-primary);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+
